@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-DOM-EVENT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 onclick="console.log('your browsing 3rd pages')">Today's DOM Special Events Day!</h1>
+    <button title="This is tooltip" onclick="console.log(7)">Click Me</button>
+    <button onclick="console.log(65)">Another Button</button>
+    <br>
+
+    <!-- option:01 add onclick function -->
+    <button onclick="document.body.style.backgroundColor='yellow' ">Make Yellow</button>
+
+    <!--option:02(we will use) funtion declered events.js -->
+    <button onclick="makeRed()">Make Red</button>
+
+    <!-- option:03  using id onclick -->
+    <button id="make-blue">Make Blue</button>
+    <button id="make-purple">Make Purple</button>
+
+    <!-- option:04 onclick -->
+    <button id="make-pink">Make Pink</button>
+    <!-- option:04 onclick another -->
+    <button id="make-green">Make Green</button>
+
+    <!-- optioon:04 and final we will using -->
+    <button id="make-goldenrod">Make GoldenRod</button>
+    <!-- scripts -->
+    <script>
+
+
+
+      // script.js oo amra eibe function declear kore korte pari
+        // function makeRed() {
+        //     document.body.style.backgroundColor = 'red';
+        // }
+    </script>
+
+    <script src="js/events.js"></script>
+
+
+</body>
+
+</html>

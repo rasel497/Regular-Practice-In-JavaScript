@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOUR-OF-DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 11:53sec -->
+
+    <header>
+        <h1>Welcome To My DOM</h1>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci cum, sit blanditiis, magni tenetur aut
+            rem expedita alias, itaque suscipit placeat nobis beatae obcaecati iure!</p>
+    </header>
+
+    <main id="main-container">
+
+        <section>
+            <h1>My Awesome DOM FattaFAti</h1>
+            <ul>
+                <li>Jalali Set</li>
+                <li>Shafayet</li>
+                <li>Bonobashi</li>
+                <li>Bonali</li>
+            </ul>
+        </section>
+
+        <section class="fruits-container">
+            <h1 id="fruits-title" class="some-class random-class blue-bg">Fruits Name in Bangladesh</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>Banana</li>
+                <li>Mango</li>
+            </ul>
+
+        </section>
+
+        <section id="places-container" class="large-text">
+            <h1 id="places-title">Please I like To Visit</h1>
+
+            <ul id="places-list">
+                <li class="important-palce">Banglamotor</li>
+                <li class="important-palce">Shabagh</li>
+                <li class="important-palce">Kataban</li>
+                <li class="important-palce">Bata singnal</li>
+                <li class="other-place">new york</li>
+            </ul>
+
+            <!-- appendChild() add kora -->
+        </section>
+
+
+    </main>
+
+    <script>
+        // console.log('Hello Java Script DOM');
+    </script>
+
+
+
+    <!-- amra console theke 1ta tag er aname diye purapuri oi tag er man console thkete pari -->
+    <script>
+
+
+        // option-01: getElementsByTagName
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+
+        for (const li of liCollection) {
+            // console.log(li.innerText);
+        }
+
+        //option-02: single element
+        const fruitsTitle = document.getElementById('fruits-title');
+        fruitsTitle.innerText = 'Fruits changed by JS';
+
+        //option-03: multiple elemets
+        const places = document.getElementsByClassName('important-palce');
+        for (const place of places) {
+            // console.log(place.innerText);
+        }
+
+        //option-04:querySelector
+        //option-05:querySelectorAll
+        const someLi = document.querySelectorAll('.fruits-container li');
+        // console.log(someLi);
+        for (const li of someLi) {
+            // console.log(li.innerText);
+        }
+    </script>
+
+    <!-- <script>
+        const student = {
+            name: 'abul',
+            ID: 1122,
+            study: function (time) {
+                console.log('Study kortses');
+            }
+        }
+    </script> -->
+
+
+
+    <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script src="js/style.js"></script>
+
+</body>
+
+</html>

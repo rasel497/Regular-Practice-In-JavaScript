@@ -1,0 +1,83 @@
+
+/* Problem-01: radianToDegree **/
+function radianToDegree(radian) {
+
+    const degree = radian * 57.296;
+    return degree;
+}
+// const myRadian = 10;
+// const myDegree = radianToDegree(myRadian);
+// console.log(myDegree);
+
+
+/* Problem-02: isJavaScriptFile **/
+function isJavaScriptFile(String) {
+
+    if (typeof (String) !== 'string') {
+        return 'please enter the valied input';
+    }
+    else if (String.endsWith('.js')) {
+        return true;
+    }
+    else {
+        return 'error: please write valid input';
+        // when user input other extension
+    }
+}
+//console.log(isJavaScriptFile('index.js'));
+
+
+/* Problem-03: oilPrice **/
+function oilPrice(diselPerLiter, petrolPerLiter, octenPerLiter) {
+
+    const perDisel = 114;
+    const perPetrol = 130;
+    const perOcten = 135;
+
+    const diselPrice = diselPerLiter * perDisel;
+    const petrolPrice = petrolPerLiter * perPetrol;
+    const octenPrice = octenPerLiter * perOcten;
+    const totalPrice = diselPrice + petrolPrice + octenPrice;
+
+    return totalPrice;
+}
+// const totalPrice = oilPrice(1, 1, 1);
+// console.log(totalPrice);
+
+
+/* Problem-04: publicBusFare **/
+function publicBusFare(pasengers) {
+
+    if (typeof (pasengers) === 'number') {
+        if (pasengers >= 0) {
+            const afterBusLeft = pasengers % 50;
+            const afterMircoBusLeft = afterBusLeft % 11;
+            const totalPublicBusFare = afterMircoBusLeft * 250;
+
+            return totalPublicBusFare;
+        }
+        return 'error: you can not take any negative input';
+        // when user input -1 to -n type of number
+    }
+    return 'error: your input value is not valid';
+    // when user input without number type of value
+}
+// const fairCost = publicBusFare(117);
+// console.log(fairCost);
+
+
+/*Problem-05: isBestFriend**/
+function isBestFriend(person1, person2) {
+
+    if ((typeof (person1) === "object") && (typeof (person2) === "object")) {
+        if ((person1.name === person2.friend) && (person2.name === person1.friend)) {
+            return true;
+        }
+        return false;
+    }
+    return 'error: input valid data type, try again'
+    // When user input without string type of value
+}
+
+
+
