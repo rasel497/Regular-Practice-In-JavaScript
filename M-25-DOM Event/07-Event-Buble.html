@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event-Buble</title>
+</head>
+
+<style>
+    #body {
+        border: 2px solid red;
+    }
+
+    #list-container {
+        border: 2px solid blue;
+    }
+
+    #item-2 {
+        border: 2px solid red;
+    }
+
+    #ul-clicked {
+        border: 2px solid greenyellow;
+    }
+</style>
+
+<body id="body">
+
+    <h1>Exploring Event Buble</h1>
+
+    <section id="list-container">
+        <!-- ul>li#item-$*6>lorem2 -->
+        <ul id="ul-clicked">
+            <li id="item-1">Lorem, ipsum.</li>
+            <li id="item-2">Excepturi, provident.</li>
+            <li id="item-3">Eum, ratione?</li>
+            <li id="item-4">Recusandae, illum.</li>
+            <li id="item-5">Voluptatem, assumenda?</li>
+            <li id="item-6">Alias, quos.</li>
+        </ul>
+
+    </section>
+
+    <script>
+        document.getElementById('item-2').addEventListener('click', function (event) {
+            console.log('Item-2 clicked');
+            event.stopPropagation(); //it work not show up level tag
+        })
+        //ul clicked
+        document.getElementById('ul-clicked').addEventListener('click', function () {
+            console.log('Ul clicked')
+        })
+        // 4: 32sec
+        document.getElementById('list-container').addEventListener('click', function () {
+            console.log('section container clicked');
+        })
+        //
+        document.getElementById('body').addEventListener('click', function () {
+            console.log('body of the html clicked');
+        })
+
+
+    </script>
+</body>
+
+</html>
