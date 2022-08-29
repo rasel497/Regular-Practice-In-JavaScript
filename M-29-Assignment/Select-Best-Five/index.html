@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <title>SELECT-BEST-FIVE</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!------- JS bundle with popper --------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- background img -->
+    <header>
+
+        <section class="header-background text-center d-flex align-items-center mx-auto">
+
+            <div class="mx-auto">
+                <h1 class="display-1 fw-semibold py-5 text-warning">Select Your Favorite Players!!</h1>
+
+                <p class="h6 text-white fw-semibold fs-5">A football team is a group of players selected to play
+                    together in the
+                    <br> various team sports known as
+                    football. football club, group, state or nation, <br>an all-star team or even selected as a
+                    hypothetical team
+                    and never play an actual match.
+                </p>
+            </div>
+        </section>
+    </header>
+    <!-- header section end -->
+
+    <!-------------main start-------------->
+    <main class="py-5 bg-dark">
+        <section class="container mt-5">
+            <div class="row">
+                <!--players cards section start  -->
+                <section class="col-md-9">
+                    <div class="d-flex flex-wrap">
+                        <!-- card one -->
+                        <div class=" col-md-4 p-2">
+                            <div class="card overflow-hidden">
+                                <img src="img/players/player-1.PNG" class="card-img-top" alt="...">
+                                <div class="card-body text-center bg-black text-white">
+                                    <h4 class="card-title"><span>Lionel Messi</span></h4>
+                                    <p class="card-text">36 Goals : 120 Assist</p>
+                                    <!-- <button class="btn btn-primary" onclick="getName(this)">SELECT</button> -->
+
+                                    <button
+                                        class="btn-select btn btn-outline-secondary btn-primary text-white fw-semibold w-100"
+                                        onclick="getName(this)" type="button">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card two -->
+                        <div class=" col-md-4 p-2">
+                            <div class="card overflow-hidden">
+                                <img src="img/players/player-2.PNG" class="card-img-top" alt="...">
+                                <div class="card-body text-center bg-black text-white">
+                                    <h4 class="card-title"><span>Neymar JR.</span></h4>
+                                    <p class="card-text">25 Goals : 130 Assist</p>
+                                    <button
+                                        class="btn-select btn btn-outline-secondary btn-primary text-white fw-semibold w-100"
+                                        onclick="getName(this)" type="button">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card three -->
+                        <div class=" col-md-4 p-2">
+                            <div class="card overflow-hidden">
+                                <img src="img/players/player-3.PNG" class="card-img-top" alt="...">
+                                <div class="card-body text-center bg-black text-white">
+                                    <h4 class="card-title"><span>Kylian Mbappé</span></h4>
+                                    <p class="text-center">14 Goals : 110 Assist</p>
+                                    <button
+                                        class="btn-select btn btn-outline-secondary btn-primary text-white fw-semibold w-100"
+                                        onclick="getName(this)" type="button">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card four -->
+                        <div class=" col-md-4 p-2">
+                            <div class="card overflow-hidden">
+                                <img src="img/players/player-4.PNG" class="card-img-top" alt="...">
+                                <div class="card-body text-center bg-black text-white">
+                                    <h4 class="card-title"><span>Andres Iniesta</span></h4>
+                                    <p class="text-center">12 Goals : 105 Assist</p>
+                                    <button
+                                        class="btn-select btn btn-outline-secondary btn-primary text-white fw-semibold w-100"
+                                        onclick="getName(this)" type="button">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card five -->
+                        <div class=" col-md-4 p-2">
+                            <div class="card overflow-hidden">
+                                <img src="img/players/player-5.PNG" class="card-img-top" alt="...">
+                                <div class="card-body text-center bg-black text-white">
+                                    <h4 class="card-title"><span>Mascherano</span></h4>
+                                    <p class="card-text">30 Goals : 12 Assist</p>
+                                    <button
+                                        class="btn-select btn btn-outline-secondary btn-primary text-white fw-semibold w-100"
+                                        onclick="getName(this)" type="button">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card six -->
+                        <div class=" col-md-4 p-2">
+                            <div class="card overflow-hidden">
+                                <img src="img/players/player-6.PNG" class="card-img-top" alt="...">
+                                <div class="card-body text-center bg-black text-white">
+                                    <h4 class="card-title"><span>Vítor Machado</span></h4>
+                                    <p class="card-text">30 Goals : 12 Assist</p>
+                                    <button
+                                        class="btn-select btn btn-outline-secondary btn-primary text-white fw-semibold w-100"
+                                        onclick="getName(this)" type="button">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- cards section end -->
+
+                <!-- player and budget section start  -->
+                <section class="col-md-3 text-white ">
+                    <!-- player list section -->
+                    <div class="bg-black mt-2 p-3 player-list border rounded">
+                        <h3 class="text-center text-decoration-underline fw-bold">Selected - V</h3>
+                        <hr>
+                        <ol id="selected-player-list" class="fs-3 text-light"></ol>
+                    </div>
+                    <!-- team budget section -->
+                    <div class="bg-black mt-4 p-4 border rounded">
+                        <h3 class="text-center text-decoration-underline fw-bold">Budget</h3>
+                        <hr>
+                        <p class="d-flex align-items-center justify-content-between mt-3"><span
+                                class="fs-5 text-gray">Per Player</span> <input id="per-player-expenses"
+                                class="bg-transparent border w-50 fs-5 text-white p-2" type="text" name="" id=""></p>
+
+                        <button id="calculate-btn" type="button"
+                            class="btn btn-primary w-100 btn-block mt-2">Calculate</button>
+
+                        <p class="fs-5 text-gray mt-3"><span class="me-4">Player Expenses</span> $<span
+                                id="total-player-expenses">00</span></p>
+
+                        <p class="d-flex align-items-center justify-content-between mt-2"><span
+                                class="fs-5 text-gray">Manager</span> <input id="manager-expenses"
+                                class="bg-transparent border w-50 fs-5 text-white p-2" type="text" name="" id=""></p>
+
+                        <p class="d-flex align-items-center justify-content-between mt-2"><span
+                                class="fs-5 text-gray">Coach</span> <input id="coach-expenses"
+                                class="bg-transparent border w-50 fs-5 text-white p-2" type="text" name="" id=""></p>
+
+                        <button id="calculate-total-btn" type="button"
+                            class="btn btn-primary w-100 btn-block mt-2">Calculate Total</button>
+
+                        <p class="fs-4 d-flex justify-content-between text-gray mt-3"><span class="me-4">Total</span>
+                            <span class="text-warning">$<span id="total-expenses">00</span></span>
+                        </p>
+                    </div>
+
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- js link -->
+    <script src="js/common.js"></script>
+    <script src="js/app.js"></script>
+
+
+    <!-- footer section start -->
+    <footer class="d-flex align-items-center justify-content-center bg-dark text-light border-top py-5 ">
+        <div>
+            <h3 class="fs-4 fw-semibold text-center">Football Player Site</h3>
+            <p class="fs-4 text-center">Copyright @ 2022 All Rights Reserved.</p>
+        </div>
+
+    </footer>
+    <!-- footer section end -->
+</body>
+
+</html>
