@@ -1,0 +1,2 @@
+Live site: https://idyllic-nougat-9fb10c.netlify.app/
+Github reposiitory: https://github.com/Programming-Hero-Web-Course4/b6-news-portal-assignment-rasel497
