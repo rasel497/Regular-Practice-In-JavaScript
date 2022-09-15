@@ -1,0 +1,43 @@
+<header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+            <a class="navbar-brand" href="#">Insta-Sohor</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-link active" role="button" onclick="switchTab( 'posts' )">
+                        <i class="fa-solid fa-house"></i>
+                    </li>
+
+                    <li class="nav-link active" role="button" onclick="switchTab( 'liked' )">
+                        <i class="fa-solid fa-heart text-danger"></i>
+                    </li>
+
+                    <li class="nav-link active" role="button" onclick="switchTab( 'reported' )">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main container mx-auto p-3">
+        <div id="posts">
+        </div>
+        <div id="liked">
+            <h1>Liked posts</h1>
+            <div id="likedPost">
+
+            </div>
+        </div>
+
+        <div id="reported">
+            <h1>Reported posts</h1>
+            <div id="reportedPost">
+
+            </div>
+        </div>
+    </main>
+    <footer></footer>
