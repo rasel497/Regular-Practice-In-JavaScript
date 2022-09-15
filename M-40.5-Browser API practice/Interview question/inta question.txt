@@ -1,0 +1,22 @@
+// JS concept/*
+1. null vs undefined
+2. == vs ===
+3. scope: block, function, global
+4. closure
+5. hoisting
+6. callback function
+7. arguments? what is array like object?
+8. arrar vs array like object
+9. truthy vs falsy
+10. ! vs !! or single bang ! vs double !!
+*/
+
+// Dev tool/*
+1. Elements tab
+2. Console tab
+3. Source
+4. Network
+5. Application
+6. check Responsive
+7. shotcut key
+*/
