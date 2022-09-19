@@ -1,0 +1,8 @@
+Live site Speed Typer:
+https://gregarious-salamander-be6c0c.netlify.app/
+
+Live site blogs:
+https://gregarious-salamander-be6c0c.netlify.app/blog.html
+
+Repository Link:
+https://github.com/programming-hero-web-course1/b6-type-monster-debug-assignment-rasel497
